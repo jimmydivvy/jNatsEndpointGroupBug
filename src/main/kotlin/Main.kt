@@ -6,6 +6,7 @@ import io.nats.service.Group
 import io.nats.service.Service
 import io.nats.service.ServiceEndpoint
 import kotlinx.coroutines.future.await
+import kotlin.system.exitProcess
 
 
 /**
@@ -96,6 +97,8 @@ suspend fun main(args: Array<String>) {
             e.printStackTrace()
         }
     }
+
+    exitProcess(0)
 
 
 }
